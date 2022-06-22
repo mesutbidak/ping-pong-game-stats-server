@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+</head>
+<body>
+    <div>
+        <h1>Ping Pong Prediction Model Deployment App</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input  id="myText" type="text" name="sex_h" placeholder="sex_h" required="required"/>
+            <!-- <input type="text" name="sex_a" placeholder="sex_a" required="required"/>
+            <input type="text" name="weight_h" placeholder="weight_h" required="required"/>
+            <input type="text" name="weight_a" placeholder="weight_a" required="required"/>
+            <input type="text" name="height_h" placeholder="height_h" required="required"/>
+            <input type="text" name="height_a" placeholder="height_a" required="required"/>
+            <input type="text" name="clock" placeholder="clock" required="required"/>
+            <input type="text" name="left_hand_h" placeholder="left_hand_h" required="required"/>
+            <input type="text" name="left_hand_a" placeholder="left_hand_a" required="required"/>
+            <input type="text" name="age_h" placeholder="age_h" required="required"/>
+            <input type="text" name="age_a" placeholder="age_a" required="required"/>
+            <input type="text" name="year_played_h" placeholder="year_played_h" required="required"/>
+            <input type="text" name="year_played_a" placeholder="year_played_a" required="required"/> -->
+
+            <button type="submit"> Predict </button>
+            <br>
+            <br>
+            {{prediction_text}}
+        </form>
+    </div>
+</body>
+</html>
